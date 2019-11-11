@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1y-iD-mhz">
+                                <rect key="frame" x="129" y="306.5" width="117" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnQ-ki-47m"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter an amount in USD" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27t-cf-mzL">
+                                <rect key="frame" x="16" y="287" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.97247854688457214" green="1" blue="0.90814101199306441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.16867705458083093" green="1" blue="0.17133280603138257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polish Złoty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXo-Vm-gSE">
+                                <rect key="frame" x="37" y="392" width="140.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.97405263788071861" green="1" blue="0.88297128398340585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cud-yJ-KDc">
+                                <rect key="frame" x="70" y="450" width="54.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.99593263472396798" green="1" blue="0.90313263023921786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Czech Koruna" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBl-lQ-B4f">
+                                <rect key="frame" x="-9" y="508" width="169" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.94163721188484661" green="1" blue="0.89470725193558676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCX-2N-wAL">
+                                <rect key="frame" x="229" y="509" width="50.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.12524518424271402" green="1" blue="0.05713980936535823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkJ-nJ-pIe">
+                                <rect key="frame" x="229" y="395" width="50.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.27706359552351933" green="1" blue="0.2033433943103865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07E-Ga-JgS">
+                                <rect key="frame" x="229" y="450" width="50.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.13507507883901937" green="1" blue="0.078497787662229035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035672488412629377" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.45598418416431308" green="1" blue="0.24546065559594443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZXo-Vm-gSE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80.25" id="1tq-QY-BQZ"/>
+                            <constraint firstItem="Cud-yJ-KDc" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="90.5" id="3gM-4N-dYq"/>
+                            <constraint firstItem="Cud-yJ-KDc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-37.25" id="6pL-cd-HWt"/>
+                            <constraint firstItem="07E-Ga-JgS" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="95.5" id="BWG-Au-9H7"/>
+                            <constraint firstItem="qBl-lQ-B4f" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="148.5" id="BhX-Xq-zOu"/>
+                            <constraint firstItem="rkJ-nJ-pIe" firstAttribute="leading" secondItem="ZXo-Vm-gSE" secondAttribute="trailing" constant="51.5" id="F4V-Wu-Ht4"/>
+                            <constraint firstItem="ZXo-Vm-gSE" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="32.5" id="Hto-3V-6q1"/>
+                            <constraint firstItem="ZXo-Vm-gSE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NJO-KK-9pc"/>
+                            <constraint firstItem="27t-cf-mzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nps-jI-3zz"/>
+                            <constraint firstItem="C1y-iD-mhz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OFr-Cc-8C4"/>
+                            <constraint firstItem="qBl-lQ-B4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="QJ6-vc-e6q"/>
+                            <constraint firstItem="qBl-lQ-B4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-112" id="RLB-k2-uyf"/>
+                            <constraint firstItem="rCX-2N-wAL" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="149.5" id="S5U-aE-pRB"/>
+                            <constraint firstItem="C1y-iD-mhz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SHG-UL-wOK"/>
+                            <constraint firstItem="Cud-yJ-KDc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-90.5" id="h0W-ke-oYt"/>
+                            <constraint firstItem="07E-Ga-JgS" firstAttribute="leading" secondItem="Cud-yJ-KDc" secondAttribute="trailing" constant="104.5" id="i5M-sB-TOe"/>
+                            <constraint firstItem="rkJ-nJ-pIe" firstAttribute="top" secondItem="C1y-iD-mhz" secondAttribute="bottom" constant="35.5" id="mo0-8B-37u"/>
+                            <constraint firstItem="C1y-iD-mhz" firstAttribute="top" secondItem="27t-cf-mzL" secondAttribute="bottom" constant="-10.5" id="oTv-gg-WLk"/>
+                            <constraint firstItem="rCX-2N-wAL" firstAttribute="leading" secondItem="qBl-lQ-B4f" secondAttribute="trailing" constant="69" id="th8-Hp-pRH"/>
+                            <constraint firstItem="ZXo-Vm-gSE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80.25" id="y9K-pe-50D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="convertButton" destination="C1y-iD-mhz" id="TWR-EP-d1U"/>
+                        <outlet property="currency1" destination="rkJ-nJ-pIe" id="Zni-2K-TrW"/>
+                        <outlet property="currency2" destination="07E-Ga-JgS" id="FgH-Yn-9C0"/>
+                        <outlet property="currency3" destination="rCX-2N-wAL" id="Vha-4k-rE0"/>
+                        <outlet property="inputField" destination="27t-cf-mzL" id="7jg-vQ-EiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="13.943028485757123"/>
+        </scene>
+    </scenes>
+</document>
